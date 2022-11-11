@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Home page
+	</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="flex">
+				<div class="col">
+					<div class="btn-block">
+						<button><img src="img/dist/icon/btn-arrow.svg" alt=""> Назад</button>
+					</div>
+				</div>
+				<div class="col">
+					<div class="logo">
+						<a href="/">
+							<img src="img/dist/logo.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="lang">
+						<a class="active" href=""><img src="img/dist/icon/UA.svg" alt="">Укр</a>
+						<a href=""><img src="img/dist/icon/ENG.svg" alt="">Eng</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+<main class="main">
+
+  <section class="form-pay">
+    <div class="container">
+      <div class="logo">
+        <img src="img/dist/logo-metro.svg" alt="">
+      </div>
+
+      <div class="form-block">
+        <h3>Заголовок</h3>
+        <p>Сюди потрібно придумати текст</p>
+
+
+        <div class="input__item select-item">
+          <div class="select-block">
+            <div class="select-content input-error">
+              <div class="icon"><img src="img/dist/tether.svg" alt=""></div>
+              <div class="title">USDT</div>
+              <div class="icon-arrow">
+                <img src="img/dist/select-arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="select-list">
+              <div class="list-item">
+                <div class="icon"><img src="img/dist/tether.svg" alt=""></div>
+                <div class="title">USDT</div>
+              </div>
+              <div class="list-item">
+                <div class="icon"><img src="img/dist/tether.svg" alt=""></div>
+                <div class="title">USDT</div>
+              </div>
+              <div class="list-item">
+                <div class="icon"><img src="img/dist/tether.svg" alt=""></div>
+                <div class="title">USDT</div>
+              </div>
+              <div class="list-item">
+                <div class="icon"><img src="img/dist/tether.svg" alt=""></div>
+                <div class="title">USDT</div>
+              </div>
+            </div>
+          </div>
+          <label for="input1">Валюта*</label>
+        </div>
+
+        <div class="input__item  select-item">
+          <div class="select-block">
+            <div class="select-content">
+              <div class="title">BEP20</div>
+              <div class="icon-arrow">
+                <img src="img/dist/select-arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="select-list">
+              <div class="list-item">
+                <div class="title">BEP20</div>
+              </div>
+              <div class="list-item">
+                <div class="title">BEP20</div>
+              </div>
+              <div class="list-item">
+                <div class="title">BEP20</div>
+              </div>
+              <div class="list-item">
+                <div class="title">BEP20</div>
+              </div>
+            </div>
+          </div>
+          <label for="input1">Мережа*</label>
+        </div>
+
+
+        <div class="input__item">
+          <input type="text" id="input2" placeholder="Код з Email">
+          <label for="input2">Кількість*</label>
+          <span class="error-message">Мінімальна сума: ВЕР20-6</span>
+        </div>
+
+        <div class="input__item">
+          <input type="text" id="input3" placeholder="Email">
+          <label for="input3">Email</label>
+        </div>
+
+        <div class="input__item">
+          <input type="text" id="input3" placeholder="Коментар">
+          <label for="input3">Коментар</label>
+        </div>
+
+        <button class="btn" type="submit">Перейти до оплати</button>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $(".select-content").click(function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".select-list").slideUp();
+    }
+    else {
+      $(".select-content").removeClass("active");
+      $(this).addClass("active");
+      $(".select-list").slideUp();
+      $(this).siblings(".select-list").slideDown();
+    }
+  });
+</script>
+
+</body>
+
+</html>\

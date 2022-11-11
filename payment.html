@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Home page
+	</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="flex">
+				<div class="col">
+					<div class="btn-block">
+						<button><img src="img/dist/icon/btn-arrow.svg" alt=""> Назад</button>
+					</div>
+				</div>
+				<div class="col">
+					<div class="logo">
+						<a href="/">
+							<img src="img/dist/logo.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="lang">
+						<a class="active" href=""><img src="img/dist/icon/UA.svg" alt="">Укр</a>
+						<a href=""><img src="img/dist/icon/ENG.svg" alt="">Eng</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+<main class="main">
+
+
+  <div class="copy-message">
+    <div class="icon">
+      <img src="img/dist/check.svg" alt="">
+    </div>
+    <p>Invioice link зкопійовано</p>
+  </div>
+
+  <section class="payment">
+    <div class="container">
+      <div class="logo">
+        <img src="img/dist/logo-metro.svg" alt="">
+      </div>
+      <div class="payment-block">
+        <h3>Підтвердження оплати</h3>
+        <p>Сюди потрібно придумати текст</p>
+        <div class="pay-list">
+          <div class="inner">
+            <h4>Адреса гаманця</h4>
+            <p>3MQTRzttkMtsMEy9dRq4Sf1xiSsWKgQkyH</p>
+          </div>
+          <div class="icon"><img src="img/dist/copy-svgrepo.svg" alt=""></div>
+        </div>
+        <div class="pay-list">
+          <div class="inner">
+            <h4>Мережа</h4>
+            <p>BEP20</p>
+          </div>
+          <div class="icon"></div>
+        </div>
+        <div class="pay-list">
+          <div class="inner">
+            <h4>Invioice link</h4>
+            <p>cpay.team/payment/id95839573</p>
+          </div>
+          <div class="icon"><img src="img/dist/copy-svgrepo.svg" alt=""></div>
+        </div>
+        <div class="divider"></div>
+        <div class="total">
+          <div class="text">Сума оплати</div>
+          <div class="total-price">837 usdt</div>
+        </div>
+        <button class="btn">Оплатити</button>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $(".select-content").click(function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".select-list").slideUp();
+    }
+    else {
+      $(".select-content").removeClass("active");
+      $(this).addClass("active");
+      $(".select-list").slideUp();
+      $(this).siblings(".select-list").slideDown();
+    }
+  });
+</script>
+
+</body>
+
+</html>
